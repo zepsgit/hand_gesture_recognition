@@ -1,0 +1,3 @@
+dataset.csv 2000 cases for each class
+dataset1.csv 10k cases for each class with some bad data on purpose
+dataset2.csv 10k cases for each class with good data
