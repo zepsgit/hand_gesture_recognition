@@ -21,6 +21,11 @@ model = load_model('mp_hand_gesture')
 IMAGE_FILES = []
 BG_COLOR = (0,0,0) # gray
 MASK_COLOR = (255, 255, 255) # white
+
+##############################################
+## Segment from background
+#############################################
+'''
 with mp_selfie_segmentation.SelfieSegmentation(
     model_selection=0) as selfie_segmentation:
   for idx, file in enumerate(IMAGE_FILES):
@@ -40,7 +45,7 @@ with mp_selfie_segmentation.SelfieSegmentation(
     bg_image[:] = BG_COLOR
     output_image = np.where(condition, fg_image, bg_image)
     cv2.imwrite('./temp/' + str(idx) + '.png', output_image)
-
+'''
 # For webcam input:
 BG_COLOR = (0, 0, 0) # gray
 cap = cv2.VideoCapture(0)

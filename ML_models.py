@@ -88,6 +88,6 @@ plt.xlabel("false positive rate")
 plt.ylabel("true positive rate")
 plt.legend(loc="best")
 plt.title("ROC curve")
-plt.savefig('./img/roc_10k12.png')
+plt.savefig('./img/roc_10k12.png')########### only class 1 and class 2
 plt.show() 
     

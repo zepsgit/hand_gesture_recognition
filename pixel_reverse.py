@@ -4,7 +4,7 @@ import csv
 from matplotlib import pyplot as plt
 pixels=[]
 cnt=0
-for name in ['fist','palm','ok','one','thumb']:
+for name in ['fist']:#,'palm','ok','one','thumb'
     for i in range(1):
         cnt+=1
         print(cnt)
@@ -20,12 +20,20 @@ for name in ['fist','palm','ok','one','thumb']:
         # cv.waitKey(0)
         # cv.destroyAllWindows()
         resized_img=resized_img.flatten()
-        resized_img[1318:1321]=0
-        resized_img[1357:1369]=0
-        resized_img[1376:1380]=0
-        resized_img[1998:2000]=0
-        resized_img[2996:2998]=0
-        
+        # resized_img[1318:1321]=0
+        # resized_img[1357:1369]=0
+        # resized_img[1376:1380]=0
+        # resized_img[1998:2000]=0
+        # resized_img[2996:2998]=0
+        resized_img[0:995]=0
         resized_img=np.reshape(resized_img,(-1,width))
         plt.imshow(resized_img, interpolation='nearest')
         plt.show()
+        #     plt.show()
+        #     plt.imshow(resized_img, interpolation='nearest')
+        #     plt.show()
+        # for j in range(20):
+        #     resized_img[0:j]=0
+        #     resized_img=np.reshape(resized_img,(-1,width))
+        #     plt.imshow(resized_img, interpolation='nearest')
+        #     plt.show()

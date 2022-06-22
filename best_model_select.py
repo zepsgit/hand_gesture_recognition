@@ -2,7 +2,7 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import label_binarize
-
+# dataset.csv is landmark features
 with open("./dataset/dataset2.csv") as file_name:
     train_data_raw = np.loadtxt(file_name, delimiter=",")
 _,w_train=train_data_raw.shape
