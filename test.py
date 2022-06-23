@@ -1,11 +1,10 @@
-class Flag:
-  flag = False
+from time import time
 
-f = Flag()
-print("Old flag: ")
-print(f.flag)
 
-setattr(f, 'flag', True)
-
-print("Flag Now is: ")
-print(f.flag)
+import time
+k=50000000
+s=time.time()
+while k:
+    k-=1
+end=time.time()
+print(end-s)
