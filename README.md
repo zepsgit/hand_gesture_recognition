@@ -3,4 +3,4 @@
 - Employed Hand Gesture Recognition in Web Application.
 - Developed new algorithm for feature extraction.
 ## Demo
-![](https://github.com/zepsgit/hand_gesture_recognition/tree/master/img/1.gif)
+!["demo"](https://github.com/zepsgit/hand_gesture_recognition/blob/master/img/1.gif)
